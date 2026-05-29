@@ -45,9 +45,10 @@ int main() {
         rdata >> temp;
         buffer = temp;
 
-        // Call HLS function
+     
        
-        adder_tree(&output, input);
+        // Call HLS function
+        hls_pp(&output, x, y);
 
         pp_rel_err = 100.0f * std::fabs((output - buffer) / buffer);
 
