@@ -1,5 +1,5 @@
 //Libreria del periferico generada con el con los comandos descritos en el script "create_driver.tcl"
-#include "/home/vicente/adder_tree_rtl/app_component/src/../../drivers/adder_tree_v1_0/src/adder_tree.h"
+#include "adder_tree_rtl.h"
 
 #include <stdio.h>
 #include "xil_printf.h"
@@ -20,13 +20,13 @@ int main() {
     uint32_t reg3_val = ((uint32_t)input[7] << 16) | input[6];
 
     // Escritura de entradas
-    ADDER_TREE_mWriteReg(XPAR_ADDER_TREE_0_BASEADDR, ADDER_TREE_S00_AXI_SLV_REG0_OFFSET, reg0_val);
-    ADDER_TREE_mWriteReg(XPAR_ADDER_TREE_0_BASEADDR, ADDER_TREE_S00_AXI_SLV_REG1_OFFSET, reg1_val);
-    ADDER_TREE_mWriteReg(XPAR_ADDER_TREE_0_BASEADDR, ADDER_TREE_S00_AXI_SLV_REG2_OFFSET, reg2_val);
-    ADDER_TREE_mWriteReg(XPAR_ADDER_TREE_0_BASEADDR, ADDER_TREE_S00_AXI_SLV_REG3_OFFSET, reg3_val);
+    ADDER_TREE_RTL_mWriteReg(XPAR_ADDER_TREE_RTL_0_BASEADDR, ADDER_TREE_RTL_S00_AXI_SLV_REG0_OFFSET, reg0_val);
+    ADDER_TREE_RTL_mWriteReg(XPAR_ADDER_TREE_RTL_0_BASEADDR, ADDER_TREE_RTL_S00_AXI_SLV_REG1_OFFSET, reg1_val);
+    ADDER_TREE_RTL_mWriteReg(XPAR_ADDER_TREE_RTL_0_BASEADDR, ADDER_TREE_RTL_S00_AXI_SLV_REG2_OFFSET, reg2_val);
+    ADDER_TREE_RTL_mWriteReg(XPAR_ADDER_TREE_RTL_0_BASEADDR, ADDER_TREE_RTL_S00_AXI_SLV_REG3_OFFSET, reg3_val);
 
     // Lectura de salida
-    int total_sum = ADDER_TREE_mReadReg(XPAR_ADDER_TREE_0_BASEADDR, ADDER_TREE_S00_AXI_SLV_REG4_OFFSET);
+    int total_sum = ADDER_TREE_RTL_mReadReg(XPAR_ADDER_TREE_RTL_0_BASEADDR, ADDER_TREE_RTL_S00_AXI_SLV_REG4_OFFSET);
     xil_printf("Resultado obtenido de la IP: %d\r\n", total_sum);
 
     return 0;
