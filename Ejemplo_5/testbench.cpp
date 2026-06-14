@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <fstream>
 #include <cmath>
@@ -30,7 +29,7 @@ int main() {
     int input[N];
 
     float buffer;
-    float pp_rel_err = 0.0f;
+    float adder_tree_rel_err = 0.0f;
 
     for (int i = 0; i < TRIALS; ++i) {
         float temp = 0.0f;
@@ -45,20 +44,19 @@ int main() {
         rdata >> temp;
         buffer = temp;
 
-     
-       
         // Call HLS function
-        hls_pp(&output, x, y);
+       
+        adder_tree(&output, input);
 
-        pp_rel_err = 100.0f * std::fabs((output - buffer) / buffer);
+        adder_tree_rel_err = 100.0f * std::fabs((output - buffer) / buffer);
 
         std::cout << "TRIAL: " << i
                   << ",\t Expected: " << buffer
                   << "\tGot: " << output
-                  << " Err: " << pp_rel_err << "%\n";
+                  << " Err: " << adder_tree_rel_err << "%\n";
 
-        if (pp_rel_err > REL_TOL) {
-            std::cout << "PP error exceeds tolerance!" << std::endl;
+        if (adder_tree_rel_err > REL_TOL) {
+            std::cout << "Adder Tree error exceeds tolerance!" << std::endl;
             ++testResult;
         }
     }

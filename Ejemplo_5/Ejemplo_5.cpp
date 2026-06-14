@@ -1,8 +1,5 @@
-
-//#include "/home/vicente/Desktop/Memoria/Adder_tree_hls/Adder_tree_platform/hw/sdt/drivers/adder_tree_v1_0/src/xadder_tree.h"
 #include "xadder_tree.h"
 #include <stdio.h>
-//#include "platform.h"
 #include "xil_printf.h"
 #include "xparameters.h"
 

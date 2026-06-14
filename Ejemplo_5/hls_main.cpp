@@ -6,10 +6,10 @@ void adder_tree_logic(int *o_data, int i_data[N]) {
 
     int data[P][S + 1];
     for (int stage = 0; stage <= S; stage++) {
-        //#pragma HLS UNROLL 
+        #pragma HLS UNROLL 
         int ST_OUT_NUM = P >> stage;
         for (int adder = 0; adder < ST_OUT_NUM; adder++) {
-          //  #pragma HLS UNROLL
+          #pragma HLS UNROLL
             if (stage == 0) {
                 data[adder][stage] = (adder < N) ? i_data[adder] : 0;
             } else {
