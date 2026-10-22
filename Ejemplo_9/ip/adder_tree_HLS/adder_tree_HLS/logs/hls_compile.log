@@ -1,0 +1,121 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir /home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component '/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=adder_tree.cpp' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=hls_config.h' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/hls_config.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=/home/vicen3/Downloads/golden_Reference.dat' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file '/home/vicen3/Downloads/golden_Reference.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=/home/vicen3/Downloads/golden_Inputs.dat' from hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file '/home/vicen3/Downloads/golden_Inputs.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=testbench.cpp' from hls_config.cfg(7)
+INFO: [HLS 200-10] Adding test bench file '/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/testbench.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=adder_tree' from hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a100tcsg324-1' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7a100t-csg324-1'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/vitis-comp.json
+WARNING: [HLS 200-40] Skipped source file 'golden_Inputs.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'golden_Reference.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'golden_Inputs.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'golden_Reference.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.81 seconds. CPU system time: 0.33 seconds. Elapsed time: 1.11 seconds; current allocated memory: 255.836 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file 'adder_tree.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.18 seconds. CPU system time: 0.33 seconds. Elapsed time: 0.85 seconds; current allocated memory: 257.637 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 72 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 9,229 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 773 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 773 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 773 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 775 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 775 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 775 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 775 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 775 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 775 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 775 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 775 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 775 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 779 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 780 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_8_1' (adder_tree.cpp:8:21) in function 'adder_tree_logic<8, 256>' completely with a factor of 9 (adder_tree.cpp:5:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_11_2' (adder_tree.cpp:11:26) in function 'adder_tree_logic<8, 256>' completely with a factor of 1 (adder_tree.cpp:5:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_11_2' (adder_tree.cpp:11:26) in function 'adder_tree_logic<8, 256>' completely with a factor of 2 (adder_tree.cpp:5:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_11_2' (adder_tree.cpp:11:26) in function 'adder_tree_logic<8, 256>' completely with a factor of 4 (adder_tree.cpp:5:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_11_2' (adder_tree.cpp:11:26) in function 'adder_tree_logic<8, 256>' completely with a factor of 8 (adder_tree.cpp:5:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_11_2' (adder_tree.cpp:11:26) in function 'adder_tree_logic<8, 256>' completely with a factor of 16 (adder_tree.cpp:5:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_11_2' (adder_tree.cpp:11:26) in function 'adder_tree_logic<8, 256>' completely with a factor of 32 (adder_tree.cpp:5:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_11_2' (adder_tree.cpp:11:26) in function 'adder_tree_logic<8, 256>' completely with a factor of 64 (adder_tree.cpp:5:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_11_2' (adder_tree.cpp:11:26) in function 'adder_tree_logic<8, 256>' completely with a factor of 128 (adder_tree.cpp:5:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_11_2' (adder_tree.cpp:11:26) in function 'adder_tree_logic<8, 256>' completely with a factor of 256 (adder_tree.cpp:5:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'o_data'. (adder_tree.cpp:24:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.43 seconds. CPU system time: 0.43 seconds. Elapsed time: 7.1 seconds; current allocated memory: 259.398 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 259.398 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 260.633 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 261.094 MB.
+INFO: [XFORM 203-11] Balancing expressions in function 'adder_tree_logic<8, 256>' (adder_tree.cpp:14:65)...255 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.3 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.31 seconds; current allocated memory: 283.566 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 285.699 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'adder_tree' ...
+WARNING: [SYN 201-103] Legalizing function name 'adder_tree_logic<8, 256>' to 'adder_tree_logic_8_256_s'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'adder_tree_logic_8_256_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.19 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.23 seconds; current allocated memory: 289.730 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 289.730 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'adder_tree' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 289.730 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 289.730 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'adder_tree_logic_8_256_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'adder_tree_logic_8_256_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.21 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.22 seconds; current allocated memory: 296.309 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'adder_tree' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'adder_tree/o_data' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'adder_tree/i_data' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'adder_tree' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'o_data', 'i_data' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'adder_tree'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.18 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.27 seconds; current allocated memory: 314.785 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.12 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.17 seconds; current allocated memory: 314.785 MB.
+INFO: [HLS 200-2225] Wrote inferred directives to file /home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.23 seconds. CPU system time: 0.07 seconds. Elapsed time: 0.31 seconds; current allocated memory: 315.578 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for adder_tree.
+INFO: [VLOG 209-307] Generating Verilog RTL for adder_tree.
+INFO: [HLS 200-789] **** Estimated Fmax: 138.75 MHz
+INFO: [HLS 200-112] Total CPU user time: 5.07 seconds. Total CPU system time: 1.3 seconds. Total elapsed time: 11.17 seconds; peak allocated memory: 315.578 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 14s

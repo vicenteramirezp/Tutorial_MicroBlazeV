@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS",
+    "arguments": [
+      "/tools/Xilinx/2025.2/lnx64/tools/vcxx/libexec/clang++",
+      "--gcc-toolchain=/tools/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/tools/Xilinx/2025.2/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=adder_tree",
+      "-c",
+      "/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree.cpp"
+    ],
+    "file": "/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree.cpp"
+  },
+  {
+    "directory": "/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS",
+    "arguments": [
+      "/tools/Xilinx/2025.2/lnx64/tools/vcxx/libexec/clang++",
+      "--gcc-toolchain=/tools/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/tools/Xilinx/2025.2/Vitis/include",
+      "-c",
+      "/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/testbench.cpp"
+    ],
+    "file": "/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/testbench.cpp"
+  }
+]

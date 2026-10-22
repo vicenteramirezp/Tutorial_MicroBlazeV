@@ -1,0 +1,7 @@
+<pragmas>
+<pragma file="adder_tree.cpp" line="25" pragmaType="interface" parentfunction="adder_tree" mode="s_axilite" port="i_data" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="adder_tree.cpp" line="26" pragmaType="interface" parentfunction="adder_tree" mode="s_axilite" port="o_data" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="adder_tree.cpp" line="27" pragmaType="interface" parentfunction="adder_tree" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="adder_tree.cpp" line="9" pragmaType="unroll" parentfunction="adder_tree_logic" factor="-1" skip_exit_check="0"/>
+<pragma file="adder_tree.cpp" line="12" pragmaType="unroll" parentfunction="adder_tree_logic" factor="-1" skip_exit_check="0"/>
+</pragmas>

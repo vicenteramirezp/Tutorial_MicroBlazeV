@@ -1,0 +1,248 @@
+<ENTRY>
+{
+ "thisFile": "/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/adder_tree_HLS.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Sep  1 13:43:52 2026",
+ "timestampMillis": "1788284632054",
+ "buildStep": {
+  "cmdId": "6a100227-2ee8-4b00-bb43-7c6c7bb70ee9",
+  "name": "v++",
+  "logFile": "/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/logs/adder_tree_HLS.steps.log",
+  "commandLine": "/tools/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/hls_config.cfg --work_dir adder_tree_HLS ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/hls_config.cfg",
+   "--work_dir",
+   "adder_tree_HLS"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/hls_config.cfg",
+    "content": "part=xc7a100tcsg324-1\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\ntb.file=testbench.cpp\nsyn.file=adder_tree.cpp\nsyn.file=hls_config.h\nsyn.file=/home/vicen3/Downloads/golden_Reference.dat\nsyn.file=/home/vicen3/Downloads/golden_Inputs.dat\nsyn.top=adder_tree"
+   }
+  ],
+  "cwd": "/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep  1 13:43:52 2026",
+ "timestampMillis": "1788284632054",
+ "status": {
+  "cmdId": "6a100227-2ee8-4b00-bb43-7c6c7bb70ee9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Sep  1 13:43:53 2026",
+ "timestampMillis": "1788284633940",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "adder_tree",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree.cpp",
+     "/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/hls_config.h",
+     "/home/vicen3/Downloads/golden_Reference.dat",
+     "/home/vicen3/Downloads/golden_Inputs.dat"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Sep  1 13:43:53 2026",
+ "timestampMillis": "1788284633941",
+ "buildStep": {
+  "cmdId": "f32dfd0e-0775-44ee-bde8-3e0460609a5f",
+  "name": "",
+  "logFile": "/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep  1 13:43:53 2026",
+ "timestampMillis": "1788284633941",
+ "status": {
+  "cmdId": "f32dfd0e-0775-44ee-bde8-3e0460609a5f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep  1 13:43:53 2026",
+ "timestampMillis": "1788284633941",
+ "report": {
+  "path": "/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep  1 13:43:53 2026",
+ "timestampMillis": "1788284633941",
+ "report": {
+  "path": "/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep  1 13:43:53 2026",
+ "timestampMillis": "1788284633941",
+ "report": {
+  "path": "/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep  1 13:44:04 2026",
+ "timestampMillis": "1788284644214",
+ "report": {
+  "path": "/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep  1 13:44:04 2026",
+ "timestampMillis": "1788284644214",
+ "report": {
+  "path": "/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep  1 13:44:04 2026",
+ "timestampMillis": "1788284644215",
+ "report": {
+  "path": "/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep  1 13:44:04 2026",
+ "timestampMillis": "1788284644215",
+ "status": {
+  "cmdId": "f32dfd0e-0775-44ee-bde8-3e0460609a5f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Sep  1 13:44:04 2026",
+ "timestampMillis": "1788284644325",
+ "status": {
+  "cmdId": "6a100227-2ee8-4b00-bb43-7c6c7bb70ee9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep  1 13:44:04 2026",
+ "timestampMillis": "1788284644350",
+ "report": {
+  "path": "/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/reports/v++_compile_adder_tree_HLS_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Sep  1 13:44:04 2026",
+ "timestampMillis": "1788284644350",
+ "report": {
+  "path": "/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/reports/.db/v++_compile_adder_tree_HLS_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

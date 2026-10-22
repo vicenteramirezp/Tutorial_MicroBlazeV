@@ -1,0 +1,220 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: adder_tree.cpp, Line: 29, Column: 5 }
+Function:        _Z10adder_treePiS_
+Args:            
+  - Callee:          'void adder_tree_logic<8, 256>(int*, int*)'
+    DebugLoc:        { File: adder_tree.cpp, Line: 5, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'adder_tree(int*, int*)'
+    DebugLoc:        { File: adder_tree.cpp, Line: 24, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: adder_tree.cpp, Line: 5, Column: 0 }
+Function:        _Z16adder_tree_logicILi8ELi256EEvPiS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_8_1
+  - String:          ''' ('
+  - LoopLoc:         'adder_tree.cpp:8:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'adder_tree_logic<8, 256>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: adder_tree.cpp, Line: 5, Column: 0 }
+Function:        _Z16adder_tree_logicILi8ELi256EEvPiS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_11_2
+  - String:          ''' ('
+  - LoopLoc:         'adder_tree.cpp:11:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'adder_tree_logic<8, 256>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: adder_tree.cpp, Line: 5, Column: 0 }
+Function:        _Z16adder_tree_logicILi8ELi256EEvPiS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_11_2
+  - String:          ''' ('
+  - LoopLoc:         'adder_tree.cpp:11:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'adder_tree_logic<8, 256>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: adder_tree.cpp, Line: 5, Column: 0 }
+Function:        _Z16adder_tree_logicILi8ELi256EEvPiS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_11_2
+  - String:          ''' ('
+  - LoopLoc:         'adder_tree.cpp:11:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'adder_tree_logic<8, 256>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: adder_tree.cpp, Line: 5, Column: 0 }
+Function:        _Z16adder_tree_logicILi8ELi256EEvPiS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_11_2
+  - String:          ''' ('
+  - LoopLoc:         'adder_tree.cpp:11:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'adder_tree_logic<8, 256>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: adder_tree.cpp, Line: 5, Column: 0 }
+Function:        _Z16adder_tree_logicILi8ELi256EEvPiS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_11_2
+  - String:          ''' ('
+  - LoopLoc:         'adder_tree.cpp:11:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'adder_tree_logic<8, 256>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: adder_tree.cpp, Line: 5, Column: 0 }
+Function:        _Z16adder_tree_logicILi8ELi256EEvPiS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_11_2
+  - String:          ''' ('
+  - LoopLoc:         'adder_tree.cpp:11:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'adder_tree_logic<8, 256>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: adder_tree.cpp, Line: 5, Column: 0 }
+Function:        _Z16adder_tree_logicILi8ELi256EEvPiS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_11_2
+  - String:          ''' ('
+  - LoopLoc:         'adder_tree.cpp:11:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'adder_tree_logic<8, 256>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '64'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: adder_tree.cpp, Line: 5, Column: 0 }
+Function:        _Z16adder_tree_logicILi8ELi256EEvPiS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_11_2
+  - String:          ''' ('
+  - LoopLoc:         'adder_tree.cpp:11:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'adder_tree_logic<8, 256>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '128'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: adder_tree.cpp, Line: 5, Column: 0 }
+Function:        _Z16adder_tree_logicILi8ELi256EEvPiS0_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_11_2
+  - String:          ''' ('
+  - LoopLoc:         'adder_tree.cpp:11:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'adder_tree_logic<8, 256>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '256'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: adder_tree.cpp, Line: 29, Column: 5 }
+Function:        _Z10adder_treePiS_
+Args:            
+  - Callee:          'void adder_tree_logic<8, 256>(int*, int*)'
+    DebugLoc:        { File: adder_tree.cpp, Line: 5, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'adder_tree(int*, int*)'
+    DebugLoc:        { File: adder_tree.cpp, Line: 24, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_adder_tree_ir
+Args:            
+  - Callee:          'adder_tree(int*, int*)'
+    DebugLoc:        { File: adder_tree.cpp, Line: 24, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_adder_tree_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: adder_tree.cpp, Line: 24, Column: 0 }
+Function:        _Z10adder_treePiS_
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       o_data
+  - String:          '''.'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: adder_tree.cpp, Line: 29, Column: 5 }
+Function:        _Z10adder_treePiS_
+Args:            
+  - Callee:          'void adder_tree_logic<8, 256>(int*, int*)'
+    DebugLoc:        { File: adder_tree.cpp, Line: 5, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'adder_tree(int*, int*)'
+    DebugLoc:        { File: adder_tree.cpp, Line: 24, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

@@ -1,0 +1,49 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir /home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component '/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=adder_tree.c' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree.c' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=adder_tree.h' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=/home/vicen3/Downloads/golden_Reference.dat' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file '/home/vicen3/Downloads/golden_Reference.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=/home/vicen3/Downloads/golden_Inputs.dat' from hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file '/home/vicen3/Downloads/golden_Inputs.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=testbench.cpp' from hls_config.cfg(7)
+INFO: [HLS 200-10] Adding test bench file '/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/testbench.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a100tcsg324-1' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7a100t-csg324-1'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/vitis-comp.json
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../adder_tree.c in debug mode
+../../../../adder_tree.c:3:1: error: unknown type name 'template'
+template <int S, int P>
+^
+../../../../adder_tree.c:3:10: error: expected identifier or '('
+template <int S, int P>
+         ^
+../../../../adder_tree.c:30:5: error: use of undeclared identifier 'adder_tree_logic'
+    adder_tree_logic<STAGES, POW2_N>(o_data, i_data);
+    ^
+../../../../adder_tree.c:30:36: warning: ordered comparison between pointer and integer ('int' and 'int *')
+    adder_tree_logic<STAGES, POW2_N>(o_data, i_data);
+                             ~~~~~~^~~~~~~~~~~~~~~~~
+../../../../adder_tree.c:30:38: warning: left operand of comma operator has no effect [-Wunused-value]
+    adder_tree_logic<STAGES, POW2_N>(o_data, i_data);
+                                     ^~~~~~
+2 warnings and 3 errors generated.
+make: *** [csim.mk:95: obj/adder_tree.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: CSIM Failed
+INFO: [HLS 200-112] Total CPU user time: 0.76 seconds. Total CPU system time: 0.41 seconds. Total elapsed time: 1.04 seconds; peak allocated memory: 255.816 MB.

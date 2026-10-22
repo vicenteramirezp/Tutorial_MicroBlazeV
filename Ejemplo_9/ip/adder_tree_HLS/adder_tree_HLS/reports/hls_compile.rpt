@@ -1,0 +1,202 @@
+
+
+================================================================
+== Synthesis Summary Report of 'adder_tree'
+================================================================
++ General Information: 
+    * Date:           Tue Sep  1 13:44:03 2026
+    * Version:        2025.2 (Build 6295257 on Nov 14 2025)
+    * Project:        adder_tree_HLS
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xc7a100t-csg324-1
+    
+
+* Performance & Resource Estimates: 
++-----------------------------+------+---------------+----------+---------+------+----------+---------+-----------+------+---------+----+------------+-----------+-----+
+|           Modules           | Issue|               | Iteration|         | Trip |          |       Latency       |      |         |    |            |           |     |
+|           & Loops           | Type | Violation Type|  Latency | Interval| Count| Pipelined| (cycles)|    (ns)   | Slack|  BRAM   | DSP|     FF     |    LUT    | URAM|
++-----------------------------+------+---------------+----------+---------+------+----------+---------+-----------+------+---------+----+------------+-----------+-----+
+|+ adder_tree                 |     -|              -|         -|      264|     -|        no|      263|  2.630e+03|  0.09|  2 (~0%)|   -|  1220 (~0%)|  3803 (5%)|    -|
+| + adder_tree_logic_8_256_s  |     -|              -|         -|      262|     -|        no|      262|  2.620e+03|  0.09|        -|   -|  1063 (~0%)|  3616 (5%)|    -|
++-----------------------------+------+---------------+----------+---------+------+----------+---------+-----------+------+---------+----+------------+-----------+-----+
+    Name Prefix: '+' for module, 'o' for loop, '*' for dataflow
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+-------------------+
+| Interface     | Data Width | Address Width | Offset | Register | Resource Estimate |
++---------------+------------+---------------+--------+----------+-------------------+
+| s_axi_control | 32         | 11            | 16     | 0        | BRAM=2            |
++---------------+------------+---------------+--------+----------+-------------------+
+
+* S_AXILITE Registers
++---------------+-------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register    | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+-------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL        | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER        | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER      | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR      | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | o_data      | 0x10   | 32    | R      | Data signal of o_data            |                                                                      |
+| s_axi_control | o_data_ctrl | 0x14   | 32    | R      | Control signal of o_data         | 0=o_data_ap_vld                                                      |
++---------------+-------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| o_data   | out       | int*     |
+| i_data   | in        | int*     |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+---------------+----------+---------------------------------------+
+| Argument | HW Interface  | HW Type  | HW Info                               |
++----------+---------------+----------+---------------------------------------+
+| o_data   | s_axi_control | register | name=o_data offset=0x10 range=32      |
+| o_data   | s_axi_control | register | name=o_data_ctrl offset=0x14 range=32 |
+| i_data   | s_axi_control | memory   | name=i_data offset=1024 range=1024    |
++----------+---------------+----------+---------------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------+-----+--------+--------------+-----+--------+---------+
+| Name                        | DSP | Pragma | Variable     | Op  | Impl   | Latency |
++-----------------------------+-----+--------+--------------+-----+--------+---------+
+| + adder_tree                | 0   |        |              |     |        |         |
+|  + adder_tree_logic_8_256_s | 0   |        |              |     |        |         |
+|    grp_fu_2853_p2           |     |        | add_ln16_1   | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_4   | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_7   | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_8   | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_11  | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_16  | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_19  | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_22  | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_23  | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_26  | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_31  | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_32  | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_35  | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_38  | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_39  | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_42  | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_47  | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_50  | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_53  | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_54  | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_57  | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_64  | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_67  | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_70  | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_71  | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_74  | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_79  | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_82  | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_85  | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_86  | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_89  | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_94  | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_95  | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_98  | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_101 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_102 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_105 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_110 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_113 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_116 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_117 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_120 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_127 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_128 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_131 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_134 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_135 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_138 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_143 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_146 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_149 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_150 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_153 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_158 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_159 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_162 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_165 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_166 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_169 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_174 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_177 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_180 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_181 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_184 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_191 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_194 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_197 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_198 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_201 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_206 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_209 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_212 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_213 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_216 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_221 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_222 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_225 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_228 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_229 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_232 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_237 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_240 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_243 | add | fabric | 0       |
+|    grp_fu_2871_p2           |     |        | add_ln16_244 | add | fabric | 0       |
+|    grp_fu_2853_p2           |     |        | add_ln16_247 | add | fabric | 0       |
++-----------------------------+-----+--------+--------------+-----+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name              | Usage     | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                   |           |           |      |      |        |          |      |         | Banks            |
++-------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| + adder_tree      |           |           | 2    | 0    |        |          |      |         |                  |
+|   control_s_axi_U | interface | s_axilite | 2    |      |        |          |      |         |                  |
++-------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+----------------------------+-----------------------------------------+
+| Type      | Options                    | Location                                |
++-----------+----------------------------+-----------------------------------------+
+| UNROLL    |                            | in adder_tree_logic (adder_tree.cpp:9)  |
+| UNROLL    |                            | in adder_tree_logic (adder_tree.cpp:12) |
+| INTERFACE | mode=s_axilite port=i_data | in adder_tree (adder_tree.cpp:25)       |
+| INTERFACE | mode=s_axilite port=o_data | in adder_tree (adder_tree.cpp:26)       |
+| INTERFACE | mode=s_axilite port=return | in adder_tree (adder_tree.cpp:27)       |
++-----------+----------------------------+-----------------------------------------+
+
+

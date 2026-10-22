@@ -1,0 +1,32 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "adder_tree.cpp",
+    "fileloc": 24,
+    "instructions": 5,
+    "memory_accesses": 0,
+    "name": "adder_tree",
+    "total_instructions": 773
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 10,
+    "file": "adder_tree.cpp",
+    "fileloc": 5,
+    "instructions": 768,
+    "loads": {
+      "L": 256
+    },
+    "memory_accesses": 0,
+    "name": "adder_tree_logic<8, 256>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 768
+  }
+}

@@ -1,0 +1,18 @@
+INFO: [SIM 2] *************** CSIM start ***************
+make: 'csim.exe' is up to date.
+Running C++ simulation!
+TRIAL: 0,	 Expected: 256	Got: 256 Err: 0%
+TRIAL: 1,	 Expected: 256	Got: 256 Err: 0%
+TRIAL: 2,	 Expected: 256	Got: 256 Err: 0%
+TRIAL: 3,	 Expected: 256	Got: 256 Err: 0%
+TRIAL: 4,	 Expected: 256	Got: 256 Err: 0%
+TRIAL: 5,	 Expected: 256	Got: 256 Err: 0%
+TRIAL: 6,	 Expected: 256	Got: 256 Err: 0%
+TRIAL: 7,	 Expected: 256	Got: 256 Err: 0%
+TRIAL: 8,	 Expected: 256	Got: 256 Err: 0%
+TRIAL: 9,	 Expected: 256	Got: 256 Err: 0%
+*******************************************
+*	 	  PASS 
+*******************************************
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

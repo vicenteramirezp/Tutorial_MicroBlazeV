@@ -1,0 +1,28 @@
+---
+MainSourceFile:  '/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/.autopilot/db/adder_tree.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_8_1:  '
+      FilePath:        adder_tree.cpp
+      FileOffset:      8
+      Replacements:
+        - FilePath:        '/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/.autopilot/db/adder_tree.pp.0.cpp'
+          Offset:          9705
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_8_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_11_2:  '
+      FilePath:        adder_tree.cpp
+      FileOffset:      11
+      Replacements:
+        - FilePath:        '/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/.autopilot/db/adder_tree.pp.0.cpp'
+          Offset:          9812
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_11_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS'
+...

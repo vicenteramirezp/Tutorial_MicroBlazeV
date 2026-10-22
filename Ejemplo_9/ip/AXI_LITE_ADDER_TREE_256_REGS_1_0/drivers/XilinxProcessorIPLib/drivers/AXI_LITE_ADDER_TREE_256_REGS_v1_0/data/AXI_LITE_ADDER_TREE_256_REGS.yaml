@@ -1,0 +1,29 @@
+# Copyright (C) 2026 Advanced Micro Devices, Inc.  All rights reserved.
+# Copyright (c) 2021 Xilinx, Inc.  All rights reserved.
+# SPDX-License-Identifier: MIT
+%YAML 1.2
+---
+title: Bindings for AXI_LITE_ADDER_TREE_256_REGS
+
+maintainers:
+  - firstname lastname <firstname.lastname@amd.com>
+
+type: driver
+
+properties:
+  compatible:
+    OneOf:
+      - items:
+        - enum:
+          - xlnx,AXI-LITE-ADDER-TREE-256-REGS-1.0
+  reg:
+    description: Add a description here
+
+
+additionalProperties:
+    - reg
+
+examples:
+  AXI_LITE_ADDER_TREE_256_REGS_selftest.c
+    - reg
+...

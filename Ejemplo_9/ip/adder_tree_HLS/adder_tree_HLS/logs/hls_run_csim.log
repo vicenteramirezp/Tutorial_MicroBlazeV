@@ -1,0 +1,46 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir /home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component '/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=adder_tree.cpp' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=hls_config.h' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/hls_config.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=/home/vicen3/Downloads/golden_Reference.dat' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file '/home/vicen3/Downloads/golden_Reference.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=/home/vicen3/Downloads/golden_Inputs.dat' from hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file '/home/vicen3/Downloads/golden_Inputs.dat' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=testbench.cpp' from hls_config.cfg(7)
+INFO: [HLS 200-10] Adding test bench file '/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/testbench.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a100tcsg324-1' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7a100t-csg324-1'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/vitis-comp.json
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+make: 'csim.exe' is up to date.
+Running C++ simulation!
+TRIAL: 0,	 Expected: 256	Got: 256 Err: 0%
+TRIAL: 1,	 Expected: 256	Got: 256 Err: 0%
+TRIAL: 2,	 Expected: 256	Got: 256 Err: 0%
+TRIAL: 3,	 Expected: 256	Got: 256 Err: 0%
+TRIAL: 4,	 Expected: 256	Got: 256 Err: 0%
+TRIAL: 5,	 Expected: 256	Got: 256 Err: 0%
+TRIAL: 6,	 Expected: 256	Got: 256 Err: 0%
+TRIAL: 7,	 Expected: 256	Got: 256 Err: 0%
+TRIAL: 8,	 Expected: 256	Got: 256 Err: 0%
+TRIAL: 9,	 Expected: 256	Got: 256 Err: 0%
+*******************************************
+*	 	  PASS 
+*******************************************
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 0.78 seconds. Total CPU system time: 0.42 seconds. Total elapsed time: 1.05 seconds; peak allocated memory: 255.824 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 4s

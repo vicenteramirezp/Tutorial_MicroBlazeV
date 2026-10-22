@@ -1,0 +1,53 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="adder_tree.cpp:9:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="adder_tree_logic" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="adder_tree.cpp:12:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="adder_tree_logic" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="adder_tree" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=adder_tree" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="adder_tree.cpp:25:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="adder_tree" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=i_data" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="adder_tree.cpp:26:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="adder_tree" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=o_data" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="adder_tree.cpp:27:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="adder_tree" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="adder_tree.cpp:5:0" msg_body="Unrolling loop 'VITIS_LOOP_8_1' (adder_tree.cpp:8:21) in function 'adder_tree_logic&lt;8, 256&gt;' completely with a factor of 9">
+        <args Factor="9" LoopLoc="adder_tree.cpp:8:21" LoopName="VITIS_LOOP_8_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="adder_tree.cpp:5:0" msg_body="Unrolling loop 'VITIS_LOOP_11_2' (adder_tree.cpp:11:26) in function 'adder_tree_logic&lt;8, 256&gt;' completely with a factor of 1">
+        <args Factor="1" LoopLoc="adder_tree.cpp:11:26" LoopName="VITIS_LOOP_11_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="adder_tree.cpp:5:0" msg_body="Unrolling loop 'VITIS_LOOP_11_2' (adder_tree.cpp:11:26) in function 'adder_tree_logic&lt;8, 256&gt;' completely with a factor of 2">
+        <args Factor="2" LoopLoc="adder_tree.cpp:11:26" LoopName="VITIS_LOOP_11_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="adder_tree.cpp:5:0" msg_body="Unrolling loop 'VITIS_LOOP_11_2' (adder_tree.cpp:11:26) in function 'adder_tree_logic&lt;8, 256&gt;' completely with a factor of 4">
+        <args Factor="4" LoopLoc="adder_tree.cpp:11:26" LoopName="VITIS_LOOP_11_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="adder_tree.cpp:5:0" msg_body="Unrolling loop 'VITIS_LOOP_11_2' (adder_tree.cpp:11:26) in function 'adder_tree_logic&lt;8, 256&gt;' completely with a factor of 8">
+        <args Factor="8" LoopLoc="adder_tree.cpp:11:26" LoopName="VITIS_LOOP_11_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="adder_tree.cpp:5:0" msg_body="Unrolling loop 'VITIS_LOOP_11_2' (adder_tree.cpp:11:26) in function 'adder_tree_logic&lt;8, 256&gt;' completely with a factor of 16">
+        <args Factor="16" LoopLoc="adder_tree.cpp:11:26" LoopName="VITIS_LOOP_11_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="adder_tree.cpp:5:0" msg_body="Unrolling loop 'VITIS_LOOP_11_2' (adder_tree.cpp:11:26) in function 'adder_tree_logic&lt;8, 256&gt;' completely with a factor of 32">
+        <args Factor="32" LoopLoc="adder_tree.cpp:11:26" LoopName="VITIS_LOOP_11_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="adder_tree.cpp:5:0" msg_body="Unrolling loop 'VITIS_LOOP_11_2' (adder_tree.cpp:11:26) in function 'adder_tree_logic&lt;8, 256&gt;' completely with a factor of 64">
+        <args Factor="64" LoopLoc="adder_tree.cpp:11:26" LoopName="VITIS_LOOP_11_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="adder_tree.cpp:5:0" msg_body="Unrolling loop 'VITIS_LOOP_11_2' (adder_tree.cpp:11:26) in function 'adder_tree_logic&lt;8, 256&gt;' completely with a factor of 128">
+        <args Factor="128" LoopLoc="adder_tree.cpp:11:26" LoopName="VITIS_LOOP_11_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="adder_tree.cpp:5:0" msg_body="Unrolling loop 'VITIS_LOOP_11_2' (adder_tree.cpp:11:26) in function 'adder_tree_logic&lt;8, 256&gt;' completely with a factor of 256">
+        <args Factor="256" LoopLoc="adder_tree.cpp:11:26" LoopName="VITIS_LOOP_11_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="adder_tree.cpp:24:0" msg_body="Skipping array undecay on variable length array 'o_data'.">
+        <args ArrayName="o_data"/>
+    </msg>
+</xilinx:hls_fe_msgs>

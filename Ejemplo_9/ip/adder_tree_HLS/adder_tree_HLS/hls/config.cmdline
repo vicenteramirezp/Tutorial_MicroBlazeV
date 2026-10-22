@@ -1,0 +1,3 @@
+relativeroot=/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS
+original_argv=--mode hls --package --config /home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/hls_config.cfg --work_dir adder_tree_HLS 
+

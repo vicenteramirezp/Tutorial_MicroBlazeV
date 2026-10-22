@@ -1,0 +1,10 @@
+/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/.autopilot/db/adder_tree.pp.0.cpp:173:5: remark: Added loop label VITIS_LOOP_8_1:   [xilinx-label-all-loops]
+    for (int stage = 0; stage <= S; stage++) {
+    ^
+    VITIS_LOOP_8_1: 
+/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/.autopilot/db/adder_tree.pp.0.cpp:173:5: note: FIX-IT applied suggested code changes
+/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/.autopilot/db/adder_tree.pp.0.cpp:176:9: remark: Added loop label VITIS_LOOP_11_2:   [xilinx-label-all-loops]
+        for (int adder = 0; adder < ST_OUT_NUM; adder++) {
+        ^
+        VITIS_LOOP_11_2: 
+/home/vicen3/hardware/ADDER_TREE_256/adder_tree_HLS/adder_tree_HLS/hls/.autopilot/db/adder_tree.pp.0.cpp:176:9: note: FIX-IT applied suggested code changes
